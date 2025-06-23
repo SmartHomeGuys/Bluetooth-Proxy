@@ -1,0 +1,77 @@
+substitutions:
+  name: "bluetooth-proxy"
+  friendly_name: "Bluetooth Proxy"
+
+esphome:
+  name: ${name}
+  friendly_name: ${friendly_name}
+  project:
+    name: SmartHomeGuys.Bluetooth Proxy
+    version: "2025.6.1"
+  name_add_mac_suffix: true
+
+esp32:
+  board: esp32-c3-devkitm-1
+  framework:
+    type: esp-idf
+    sdkconfig_options:
+      CONFIG_BT_BLE_42_FEATURES_SUPPORTED: y
+      CONFIG_BT_BLE_50_FEATURES_SUPPORTED: n
+
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  # No encryption key should be added when flashed for distribution
+
+  # Single core chips need these lines
+  # https://esphome.io/components/esp32_ble_tracker
+  #on_client_connected:
+  #  - esp32_ble_tracker.start_scan:
+  #      continuous: true
+  #on_client_disconnected:
+  #  - esp32_ble_tracker.stop_scan:
+
+ota:
+  - platform: esphome
+    id: ota_esphome
+  - platform: http_request
+    id: ota_http_request
+
+http_request:
+  verify_ssl: false
+
+wifi:
+  # Dont add wifi details, just Enable fallback hotspot (captive portal to allow wifi setup for users)
+  ap:
+    ssid: "Ble-Hotspot"
+    password: "12345678"
+
+# After 1 minute of unsuccessful WiFi connection attempts, the 
+# ESP will start a WiFi hotspot using the above ssid/password which can be used to update wifi connection details.
+captive_portal:
+
+# For configuring Wi-Fi on an ESPHome device by using a serial connection to the device, eg. USB.
+improv_serial:
+
+# For configuring Wi-Fi on an ESP32 device by using Bluetooth Low Energy (BLE) to receive the credentials.
+esp32_improv:
+  authorizer: none
+
+
+# Bluebooth code starts here
+# It was based on this repo: https://github.com/esphome/bluetooth-proxies/blob/main/esp32-generic/esp32-generic-c3.yaml
+
+esp32_ble_tracker:
+  max_connections: 3
+  scan_parameters:
+    active: true
+    continuous: true  # Disable by default and enable once Home Assistant Api is connected
+
+# https://esphome.io/components/bluetooth_proxy.html
+bluetooth_proxy:
+  active: true
+  cache_services: true
+  connection_slots: 3
