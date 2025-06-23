@@ -64,6 +64,7 @@ esp32_improv:
 # Bluebooth code starts here
 # It was based on this repo: https://github.com/esphome/bluetooth-proxies/blob/main/esp32-generic/esp32-generic-c3.yaml
 
+# https://esphome.io/components/esp32_ble_tracker
 esp32_ble_tracker:
   max_connections: 3
   scan_parameters:
