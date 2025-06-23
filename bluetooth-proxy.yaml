@@ -68,7 +68,7 @@ esp32_ble_tracker:
   max_connections: 3
   scan_parameters:
     active: true
-    continuous: true  # Disable by default and enable once Home Assistant Api is connected
+    continuous: true
 
 # https://esphome.io/components/bluetooth_proxy.html
 bluetooth_proxy:
