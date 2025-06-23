@@ -26,14 +26,6 @@ logger:
 api:
   # No encryption key should be added when flashed for distribution
 
-  # Single core chips need these lines
-  # https://esphome.io/components/esp32_ble_tracker
-  #on_client_connected:
-  #  - esp32_ble_tracker.start_scan:
-  #      continuous: true
-  #on_client_disconnected:
-  #  - esp32_ble_tracker.stop_scan:
-
 ota:
   - platform: esphome
     id: ota_esphome
@@ -46,7 +38,7 @@ http_request:
 wifi:
   # Dont add wifi details, just Enable fallback hotspot (captive portal to allow wifi setup for users)
   ap:
-    ssid: "Ble-Hotspot"
+    ssid: "BLE-Hotspot"
     password: "12345678"
 
 # After 1 minute of unsuccessful WiFi connection attempts, the 
@@ -60,9 +52,22 @@ improv_serial:
 esp32_improv:
   authorizer: none
 
+update:
+  - platform: http_request
+    id: update_http_request
+    name: BLE Proxy Firmware
+    source: https://smarthomeguys.github.io/Bluetooth-Proxy/manifest.json
+    disabled_by_default: false
+    update_interval: 6h
+
+dashboard_import:
+  package_import_url: github://SmartHomeGuys/Bluetooth-Proxy/bluetooth-proxy.yaml@main
+  import_full_config: false
+  
 
 # Bluebooth code starts here
 # It was based on this repo: https://github.com/esphome/bluetooth-proxies/blob/main/esp32-generic/esp32-generic-c3.yaml
+# Default values were used below in the links provided
 
 # https://esphome.io/components/esp32_ble_tracker
 esp32_ble_tracker:
