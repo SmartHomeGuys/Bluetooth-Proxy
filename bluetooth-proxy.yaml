@@ -1,13 +1,14 @@
 substitutions:
   name: "bluetooth-proxy"
   friendly_name: "Bluetooth Proxy"
+  esp32_led_order: "GRB"  #RGB
 
 esphome:
   name: ${name}
   friendly_name: ${friendly_name}
   project:
     name: SmartHomeGuys.Bluetooth Proxy
-    version: "2025.6.1"
+    version: "2025.8.0"
   name_add_mac_suffix: true
 
 esp32:
@@ -81,3 +82,48 @@ bluetooth_proxy:
   active: true
   cache_services: true
   connection_slots: 3
+
+
+# Expose the LED to Home Assistant
+light:
+  - platform: esp32_rmt_led_strip
+    id: "light_esp32led"
+    chipset: WS2812
+    rgb_order: ${esp32_led_order}
+    pin: GPIO10
+    num_leds: 1
+    name: "ESP32 LED"
+    restore_mode: ALWAYS_OFF
+
+interval:
+  # Check if WiFi is disconnected and if so set Led light to Red
+  - interval: 5s
+    then:
+      lambda: |-
+        static bool has_wifi_connected_run_once = false;
+        static bool is_wifi_connected = false; 
+
+        is_wifi_connected = wifi::global_wifi_component->is_connected();
+        
+        if(is_wifi_connected)
+        {
+          if(has_wifi_connected_run_once == false)
+          {
+            auto call = id(light_esp32led).turn_off();
+            call.set_rgb(0.0, 0.0, 0.0);  //white
+            call.perform();
+
+            ESP_LOGD("wifi_check", "Wi-Fi connected — LED Off");
+            has_wifi_connected_run_once = true;
+          }
+        }
+        else
+        {
+          auto call = id(light_esp32led).turn_on();
+          call.set_rgb(1.0, 0.0, 0.0);  //red
+          call.perform();
+          
+          ESP_LOGD("wifi_check", "Wi-Fi disconnected — LED RED");
+          has_wifi_connected_run_once = false;
+        }
+
