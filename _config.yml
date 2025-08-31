@@ -1,7 +1,8 @@
 #title: SmartHomeGuys Bluetooth Proxy Stick Documentation
 description: SmartHomeGuys Bluetooth Proxy Stick Documentation
 
-remote_theme: pages-themes/slate@v0.2.0
+#remote_theme: pages-themes/slate@v0.2.0
+remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme
 
