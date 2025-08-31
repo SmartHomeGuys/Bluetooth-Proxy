@@ -9,7 +9,7 @@ https://smarthomeguys.github.io/Bluetooth-Proxy/Setup.html
 
 Connect the device to a USB C cable and a USB A or C port on your laptop (the cable must support data not just be one for charging).
 
-![](images/Setup-USB-Setup-page2.png)
+![](images/Setup-USB-Setup-page.png)
 
 Click the 'Connect' button, you should see a popup asking you to choose the device on the USB port you plugged it into.
 
@@ -46,7 +46,7 @@ You can follow [this guide to add the device to Home Assistant](add-to-home-assi
 
 
 ## You shouldn't need to, but you can also manually Flash the latest firmware
-If you ever need to reset the device's firmware and connect it back to Wi-Fi again just follow the instructions above but choose the 'Install XXXXXXX' option instead.
+If you ever need to reset the device's firmware and connect it back to Wi-Fi again just follow the instructions above but choose the 'Install Bluetooth Proxy' option instead.
 
 This will flash the latest firmware and then prompt to connect it to Wi-Fi.
 
