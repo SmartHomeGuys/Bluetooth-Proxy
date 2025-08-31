@@ -5,7 +5,7 @@ _Note: When you first power on the device it's Led will be solid Red, this just 
 
 To setup via USB, Open a Chrome browser to this page:
 
-https://smarthomeguys.github.io/Bluetooth-Proxy/Setup.html
+<a href="https://smarthomeguys.github.io/Bluetooth-Proxy/Setup.html">https://smarthomeguys.github.io/Bluetooth-Proxy/Setup.html</a>
 
 Connect the device to a USB C cable and a USB A or C port on your laptop (the cable must support data not just be one for charging).
 
