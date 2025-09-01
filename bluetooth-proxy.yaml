@@ -8,7 +8,7 @@ esphome:
   friendly_name: ${friendly_name}
   project:
     name: SmartHomeGuys.Bluetooth Proxy
-    version: "2025.8.0"
+    version: "2025.9.0"
   name_add_mac_suffix: true
 
 esp32:
@@ -68,20 +68,26 @@ dashboard_import:
 
 # Bluebooth code starts here
 # It was based on this repo: https://github.com/esphome/bluetooth-proxies/blob/main/esp32-generic/esp32-generic-c3.yaml
-# Default values were used below in the links provided
+# Default values were used below, copied from the links provided below in case anyone wants to override them
 
 # https://esphome.io/components/esp32_ble_tracker
 esp32_ble_tracker:
   max_connections: 3
   scan_parameters:
-    active: true
+    active: true      # Using false prevented the Battery Level being read on a Switchbot Outdoor Climate Meter
     continuous: true
+
+    # Had alot of drop offs when using defaults (interval 320ms, window 30ms) and Bermuda integration, these are stable
+    interval: 800ms
+    window: 800ms
 
 # https://esphome.io/components/bluetooth_proxy.html
 bluetooth_proxy:
   active: true
   cache_services: true
   connection_slots: 3
+
+# Bluebooth code ends here
 
 
 # Expose the LED to Home Assistant

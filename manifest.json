@@ -1,6 +1,6 @@
 {
   "name": "Bluetooth Proxy",
-  "version": "2025.8.0",
+  "version": "2025.9.0",
   "home_assistant_domain": "esphome",
   "new_install_skip_erase": false,
   "builds": [
@@ -14,7 +14,7 @@
       ],
       "ota": 
         {
-          "md5": "880fd2434b9bab6d94e7da985e045ffe",
+          "md5": "72983489f4b177ce011bdf0b2949c5ce",
           "path": "firmware/bluetooth-proxy.ota.bin",
           "release_url": "https://github.com/SmartHomeGuys/Bluetooth-Proxy/blob/main/CHANGELOG.md",
           "summary": ""
