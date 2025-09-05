@@ -8,8 +8,6 @@ To do this choose from one of these options:
 
 [Setup using USB](setup-using-usb.md)
 
-[Setup using Captive Portal (Wi-Fi Hotspot)](setup-using-captive-portal.md)
-
 
 ## Step 2: Add to Home Assistant (optional)
 If you missed it in the previous guides, you can add the device so it appears in Home Assistant by following [this guide](add-to-home-assistant.md).  

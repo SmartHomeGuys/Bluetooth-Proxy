@@ -7,20 +7,20 @@ If your Home Assistant is already setup to use a Bluetooth Proxy then just plug 
 
 If it’s not detected, try restarting Home Assistant.
 
-ADD IMG HERE ![](images/Setup-Bluetooth-Device-Discovered.png)
+![](images/Setup-Bluetooth-Device-Discovered.png)
 
 Click ‘Add’
 
-ADD IMG HERE ![](images/Setup-Bluetooth-Do-You-Want-To-Setup-Question.png)
+![](images/Setup-Bluetooth-Do-You-Want-To-Setup-Question.png)
 
 Click 'submit' and enter your Wi-Fi details when asked (this can take 20 seconds).
 
-ADD IMG HERE ![](images/Setup-Bluetooth-WiFi.png)
+![](images/Setup-Bluetooth-WiFi.png)
 
 
 After entering Wi-Fi details, click 'Submit' and the following box will appear.
 
-ADD IMG HERE  ![](images/Setup-Bluetooth-After-WiFi-Setup.png)
+![](images/Setup-Bluetooth-After-WiFi-Setup.png)
 
 You will notice behind the popup a new device was detected.
 
