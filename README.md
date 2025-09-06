@@ -9,7 +9,7 @@
   </tr>
 </table>
 
-A Bluetooth (BLE) Proxy for Home Assistant which does not need a cable. So with this there is no more trying to make that excess cable look tidy!
+This is a Bluetooth (BLE) Proxy for Home Assistant which does not need a cable, so gone are the days with trying to make excess cable look tidy!
 
 We know alot of homes these days have USB sockets everywhere from being on wall power sockets, behind your TV, on your Xbox or a spare socket on a power extension lead, this device lets you plug in the Bluetooth Proxy straight into those for a cable free look. We have designed it to be as small as possible so it's discreet in your home.
 
