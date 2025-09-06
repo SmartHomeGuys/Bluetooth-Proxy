@@ -1,8 +1,12 @@
 # Configuration
 
-The yaml code used on this device was based on this repo: 
+The yaml code used on this device which
+<a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/blob/main/deskup-pro-controller.yaml">can be found here</a>
 
+Was based on this repo: 
 <a href="https://github.com/esphome/bluetooth-proxies/blob/main/esp32-generic/esp32-generic-c3.yaml">https://github.com/esphome/bluetooth-proxies/blob/main/esp32-generic/esp32-generic-c3.yaml</a>
+
+
 
 We adjusted the following:
 
