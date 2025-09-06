@@ -20,4 +20,4 @@ If you want to change any of the default settings on the device you need to adop
 
 After adoption you can then Configure the device to suit your requirements, we have some examples here.
 
-[Configure the Bluetooth Proxy](/docs/configuration/README.md)
+[Configure the Bluetooth Proxy](../configuration/README.md)
