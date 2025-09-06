@@ -15,9 +15,13 @@ Alot of homes these days have USB sockets everywhere from being on wall power so
 
 
 ### Why do I need a Bluetooth Proxy?
-- With a proxy you can integrate Bluetooth devices into Home Assistant such as Switchbot devices
+- A Bluetooth Proxy connects to your Home Assistant server via Wi-Fi allowing you to position it nearer to your Bluetooth devices 
+- You can integrate Bluetooth devices into Home Assistant, such as Switchbot devices
 - You can extend the range of Bluetooth in your house with multiple proxies
-- With multiple Bluetooth Proxies you can use the Bermuda or ESPresence integrations in Home Assistant to track Bluetooth devices in your home
+- With multiple Bluetooth Proxies you can use the Bermuda or ESPresence integrations in Home Assistant to track Bluetooth devices that move around your home e.g.
+  - Your Home Assistant dashboard on your phone can automatically adjust depending on which room your in
+  - Attach ibeacon trackers to your waste and recycling bins and know if they have been put out for collection or are still sat in their usual spot.
+  - Attach an ibeacon to your keys and know which room you left them in
 
 https://espresense.com/home_assistant
 
@@ -27,6 +31,6 @@ https://github.com/agittins/bermuda
 - The device itself uses an ESP32-C3 chip that is powered by the built in USB port, no external USB cable is needed to power it.
 - The firmware of the Bluetooth Proxy is based on ESPHome and flashed with version 2025.8.2 or higher. This version made the C3 chip alot more stable in our testing.
 - Wi-Fi protocol used is 2.4ghz.
-- Initial setup of the device to connect it to Wi-Fi can be done using a USB, or Bluetooth (if you use Home Assistant and already have a Bluetooth proxy).
+- Initial setup of the device to connect it to Wi-Fi can be done using USB, or Bluetooth (if you use Home Assistant and already have a Bluetooth proxy).
 
 
