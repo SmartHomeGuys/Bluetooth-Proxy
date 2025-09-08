@@ -15,7 +15,6 @@ We know alot of homes these days have USB sockets everywhere from being on wall 
 
 <p align="center">
 Add Product images here
-  <img src="images/BLE-Top.jpg" height="180px" />
   <img src="images/HomeAssistant-Discovered-Bluetooth-Devices2.png" height="180px" />
 </p>
 <p align="center">
