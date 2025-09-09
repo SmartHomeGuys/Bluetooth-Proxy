@@ -27,7 +27,7 @@ Add Product images here
 - Some hardware like the Home Assistant Green do not have Bluetooth built in, so a proxy can provide it that functionality
 - Once you have Bluetooth on Home Assistant you can integrate Bluetooth devices into Home Assistant, such as Switchbot devices that communicate over Bluetooth
 - Many devices you can purchase offer their initial setup via Bluetooth BLE even if they don't communicate using it afterwards. BLE enables very easy setup of devices on Home Assistant.
-- You can extend the range of Bluetooth in your house with multiple proxies
+- Extend the range of Bluetooth in your house with multiple proxies
 - With multiple Bluetooth Proxies you can use the <a href="https://github.com/agittins/bermuda">Bermuda</a> or <a href="https://espresense.com/home_assistant">ESPresence</a> integrations in Home Assistant to track Bluetooth devices that move around your home
 
 
@@ -43,7 +43,7 @@ Add Product images here
 
 
 ### Specs
-- The device itself uses an ESP32-C3 chip that is powered by the built in USB port, no external USB cable is needed to power it.
+- The device itself uses an ESP32 chip that is powered by the built in USB port, no external USB cable is needed to power it.
 - The firmware of the Bluetooth Proxy is based on ESPHome and flashed with version 2025.8.2 or higher (which has Bluetooth stability improvements).
 - Wi-Fi protocol used is 2.4ghz.
 - Initial setup of the device to connect it to Wi-Fi can be done using USB, or Bluetooth (if you use Home Assistant and already have a Bluetooth proxy).
