@@ -1,6 +1,6 @@
 # Bluetooth Proxy Stick for Home Assistant
 
-## ⚠️ Note this project is a work in-progress right now, expect to be completed by end September 2025. 
+## ⚠️ Note this project is a work in-progress right now, expect to be completed by mid October 2025. 
 
 <table border="0">
   <tr>
@@ -11,7 +11,12 @@
 
 This is a Bluetooth (BLE) Proxy for Home Assistant which does not need a cable, so gone are the days with trying to make excess cable look tidy!
 
-We know alot of homes these days have USB sockets everywhere from being on wall power sockets, behind your TV, on your Xbox, your internet router or a spare socket on a power extension lead, this device lets you plug in the Bluetooth Proxy straight into those for a cable free look. We have designed it to be as small as possible so it's discreet in your home.
+Alot of homes these days have USB sockets everywhere from being on wall power sockets, behind your TV, on your Xbox, your internet router or a spare socket on a power extension lead.  This device lets you plug in the Bluetooth Proxy straight into those for a cable free look. We have designed it to look good and be as small as possible so it's discreet in your home, and therefore should pass the spouse approval test. 
+
+We offer a number of variants on our eBay site:
+ - USB-A straight
+ - USB-C straight
+ - USB-A right angle connector so the stick points down making it very discreet when used on wall power sockets that have USB-A ports. (available mid Nov 2025)
 
 <p align="center">
 Add Product images here
@@ -44,7 +49,7 @@ Add Product images here
 
 ### Specs
 - The device itself uses an ESP32 chip that is powered by the built in USB port, no external USB cable is needed to power it.
-- The firmware of the Bluetooth Proxy is based on ESPHome and flashed with version 2025.8.2 or higher (which has Bluetooth stability improvements).
+- The firmware of the Bluetooth Proxy is based on ESPHome and flashed with version 2025.9.0 or higher (which has Bluetooth stability improvements).
 - Wi-Fi protocol used is 2.4ghz.
 - Initial setup of the device to connect it to Wi-Fi can be done using USB, or Bluetooth (if you use Home Assistant and already have a Bluetooth proxy).
 
