@@ -8,7 +8,7 @@ esphome:
   friendly_name: ${friendly_name}
   project:
     name: SmartHomeGuys.Bluetooth Proxy
-    version: "2025.9.0"
+    version: "2025.9.1"
   name_add_mac_suffix: true
 
 esp32:
