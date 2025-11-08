@@ -42,9 +42,7 @@ Add Product images here
   - Attach ibeacon trackers to your waste and recycling bins and know if they have been put out for collection or are still sat in their usual spot.
   - Attach an ibeacon to your keys and know which room you left them in
     
-- The ESP32 LED light is exposed to Home Assistant allowing for use in automations such as:
-  - Turn blue if the recycling bin has not been put out for collection yet.
-  - Turn green if the waste/trash bin has not been put out for collection yet.
+- The ESP32 LED light is exposed to Home Assistant allowing for use in automations such as turn on if the recycling bin has not been put out for collection yet.
 
 
 ### Specs
