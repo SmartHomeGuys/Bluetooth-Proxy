@@ -16,7 +16,7 @@ Alot of homes these days have USB sockets everywhere from being on wall power so
 We offer a number of variants on our eBay site:
  - USB-A straight
  - USB-C straight
- - USB-A right angle connector so the stick points down making it very discreet when used on wall power sockets that have USB-A ports. (available mid Nov 2025)
+ - USB-A right angle connector so the stick points down making it very discreet when used on wall power sockets that have USB-A ports.
 
 <p align="center">
 Add Product images here
