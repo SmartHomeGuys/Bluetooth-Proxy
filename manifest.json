@@ -1,11 +1,11 @@
 {
   "name": "Bluetooth Proxy",
-  "version": "2025.9.1",
+  "version": "2025.11.0",
   "home_assistant_domain": "esphome",
   "new_install_skip_erase": false,
   "builds": [
     {
-      "chipFamily": "ESP32-C3",
+      "chipFamily": "ESP32-C6",
       "parts": [
         { 
           "path": "firmware/bluetooth-proxy.factory.bin", 
@@ -14,7 +14,7 @@
       ],
       "ota": 
         {
-          "md5": "ae9e354e9ec1f9202a392c022a5a6448",
+          "md5": "ea4ee0d21dba13c571c5b2ad011cb3a0",
           "path": "firmware/bluetooth-proxy.ota.bin",
           "release_url": "https://github.com/SmartHomeGuys/Bluetooth-Proxy/blob/main/CHANGELOG.md",
           "summary": ""

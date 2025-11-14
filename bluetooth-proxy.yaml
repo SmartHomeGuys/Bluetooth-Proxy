@@ -1,23 +1,25 @@
 substitutions:
   name: "bluetooth-proxy"
   friendly_name: "Bluetooth Proxy"
-  esp32_led_order: "GRB"  #RGB
 
 esphome:
   name: ${name}
   friendly_name: ${friendly_name}
   project:
     name: SmartHomeGuys.Bluetooth Proxy
-    version: "2025.9.1"
+    version: "2025.11.0"
   name_add_mac_suffix: true
+  on_boot:
+    priority: 800
+    then:
+      - output.turn_off: GPIO03   # enable setting the antenna to internal or external. This activates the RF switch control
+
 
 esp32:
-  board: esp32-c3-devkitm-1
+  board: seeed_xiao_esp32c6
+  variant: esp32c6
   framework:
     type: esp-idf
-    sdkconfig_options:
-      CONFIG_BT_BLE_42_FEATURES_SUPPORTED: y
-      CONFIG_BT_BLE_50_FEATURES_SUPPORTED: n
 
 
 # Enable logging
@@ -38,6 +40,7 @@ http_request:
 
 wifi:
   # Dont add wifi details, just Enable fallback hotspot (captive portal to allow wifi setup for users)
+  power_save_mode: NONE
   ap:
     ssid: "BLE-Hotspot"
     password: "12345678"
@@ -72,7 +75,6 @@ dashboard_import:
 
 # https://esphome.io/components/esp32_ble_tracker
 esp32_ble_tracker:
-  max_connections: 3
   scan_parameters:
     active: true      # Using false prevented the Battery Level being read on a Switchbot Outdoor Climate Meter
     continuous: true
@@ -92,14 +94,25 @@ bluetooth_proxy:
 
 # Expose the LED to Home Assistant
 light:
-  - platform: esp32_rmt_led_strip
+  # C6 chip does not have an RGB Led just yellow on/off 
+  - platform: binary
     id: "light_esp32led"
-    chipset: WS2812
-    rgb_order: ${esp32_led_order}
-    pin: GPIO10
-    num_leds: 1
     name: "ESP32 LED"
     restore_mode: ALWAYS_OFF
+    output: onboard_led
+
+output:
+  - platform: gpio
+    id: onboard_led
+    pin:
+      number: GPIO15
+      inverted: true
+
+  # enables setting the antenna to external or internal. This activates the RF switch control.
+  - platform: gpio
+    id: "GPIO03"
+    pin: GPIO03
+
 
 interval:
   # Check if WiFi is disconnected and if so set Led light to Red
@@ -116,7 +129,6 @@ interval:
           if(has_wifi_connected_run_once == false)
           {
             auto call = id(light_esp32led).turn_off();
-            call.set_rgb(0.0, 0.0, 0.0);  //white
             call.perform();
 
             ESP_LOGD("wifi_check", "Wi-Fi connected — LED Off");
@@ -126,10 +138,10 @@ interval:
         else
         {
           auto call = id(light_esp32led).turn_on();
-          call.set_rgb(1.0, 0.0, 0.0);  //red
           call.perform();
           
-          ESP_LOGD("wifi_check", "Wi-Fi disconnected — LED RED");
+          ESP_LOGD("wifi_check", "Wi-Fi disconnected — LED On");
           has_wifi_connected_run_once = false;
         }
+
 

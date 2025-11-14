@@ -1,3 +1,6 @@
+# 2025.11.0
+- Switched chip to SeeedStudio XIAO C6
+
 # 2025.9.1
 - Bump ESPHome version from 2025.8.2 to 2025.9.0 as it contains more Bluetooth improvements.
 
