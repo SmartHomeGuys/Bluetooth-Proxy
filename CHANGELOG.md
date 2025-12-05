@@ -1,3 +1,6 @@
+# 2025.12.0
+- Bump ESPHome version to 2025.11.4
+
 # 2025.11.0
 - Switched chip to SeeedStudio XIAO C6
 
