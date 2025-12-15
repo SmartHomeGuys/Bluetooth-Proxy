@@ -46,10 +46,12 @@ Add Product images here
 
 
 ### Specs
-- The device itself uses an ESP32 chip that is powered by the built in USB port, no external USB cable is needed to power it.
+- The device itself uses the new ESP32-C6 chip that is powered by the built in USB port, no external USB cable is needed to power it.
+- The C6 chip has 2 processors which is ideal for Bluetooth Proxies using Wi-Fi.
 - The firmware of the Bluetooth Proxy is based on ESPHome and flashed with version 2025.9.0 or higher (which has Bluetooth stability improvements).
 - Wi-Fi protocol used is 2.4ghz.
 - Initial setup of the device to connect it to Wi-Fi can be done using USB, or Bluetooth (if you use Home Assistant and already have a Bluetooth proxy).
+- Built using only certified components from trusted suppliers to ensure reliability and safe operation.
 
 Want to take control just adopt it in ESPHome and flash any changes you need to it.
 
