@@ -25,7 +25,10 @@ Gone are the days trying to make excess cable look tidy!  We have designed it to
 
 We offer a number of variants on our eBay site:
  - USB-A straight
- - USB-A right angle so the stick points up or down making it very discreet when used on wall power sockets that have USB-A ports.
+ - USB-A right angle pointing up
+ - USB-A right angle pointing down
+
+Both of the right angle devices make it very discreet when used on wall power sockets that have USB-A ports.
 
 
 ### Why do I need a Bluetooth Proxy?
