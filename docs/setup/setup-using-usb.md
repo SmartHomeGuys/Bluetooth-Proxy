@@ -9,7 +9,7 @@ To setup via USB, Open a Chrome browser to this page:
 
 Connect the device to a USB-A port on your laptop (if you use a cable then it must support data not just be one for charging).
 
-![](images/Setup-USB-Setup-page.png)
+![](images/Setup-USB-Setup-page2.png)
 
 Click the 'Connect' button, you should see a popup asking you to choose the device on the USB port you plugged it into.
 
@@ -40,7 +40,7 @@ If the device isn't detected by Home Assistant it will ask you for the 'Host', j
 
  Or if you chose to click 'skip' on the previous screen then usually Home Assistant will already have detected the device and will be asking you to add the device to Home Assistant.
 
-![](images/Setup-USB-Homeassistant-device-detected2.png)
+![](images/Setup-USB-Homeassistant-device-detected.png)
 
 You can follow [this guide to add the device to Home Assistant](add-to-home-assistant.md).
 
