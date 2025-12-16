@@ -7,7 +7,7 @@ To setup via USB, Open a Chrome browser to this page:
 
 <a href="https://smarthomeguys.github.io/Bluetooth-Proxy/Setup.html">https://smarthomeguys.github.io/Bluetooth-Proxy/Setup.html</a>
 
-Connect the device to a USB C cable and a USB A or C port on your laptop (the cable must support data not just be one for charging).
+Connect the device to a USB-A port on your laptop (if you use a cable then it must support data not just be one for charging).
 
 ![](images/Setup-USB-Setup-page.png)
 
