@@ -37,7 +37,7 @@ We designed these to look good, be as small as possible and blend in with your h
 - Ideal for hardware like Home Assistant Green that does not have Bluetooth built-in, a proxy provides it that functionality
 - Enables integration with Bluetooth devices such as Switchbot that communicate over Bluetooth
 - Many smart devices use BLE for their initial setup - a proxy makes detection fast and reliable
-- Extend Bluetooth coverage in your house by placing multiple proxies in key locations.  3 proxies would likely cover a UK 2 story 4 bedroom new build house (built with brick/plaster board walls).  A Bluetooth signal goes through walls and ceilings.
+- Extend Bluetooth coverage in your house by placing multiple proxies in key locations.  2 or 3 proxies should cover a 2 story 4 bedroom UK new build house (built with brick/plaster board walls) with a garage on the side. A Bluetooth signal goes through walls and ceilings.
 - Works with the Bermuda or ESPresence integrations in Home Assistant for room level presence detection of phones, watches, fitness trackers and iBeacons
 
 ### Automation Ideas
@@ -55,5 +55,4 @@ Once Bluetooth devices are added to Home Assistant, you can use them in automati
 - Initial setup of the device to connect it to Wi-Fi can be done using USB or Bluetooth BLE (if your Home Assistant instance already has Bluetooth capability).
 - We have optimised the Bluetooth settings but if you want to customise it, adopt it in ESPHome and flash any changes you need to it, all the code is available free to use on our GitHub site.
 
-We designed this product to look good wherever you place it in your home, offering multiple versions so you can choose the one that fits your space best. It’s built around the modern ESP32‑C6 chip and uses only certified components for reliable performance.
-
+We designed this product to look good wherever you place it in your home, offering multiple versions so you can choose the one that fits your space best. It’s built around the modern ESP32‑C6 chip and is assembled in the UK using only certified components for reliable performance.
