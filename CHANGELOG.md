@@ -1,3 +1,9 @@
+# 2026.1.0
+- Updated ESPHome version to 2026.1.2 which introduced Wi-Fi roaming support.
+https://esphome.io/changelog/2026.1.0/#wifi-roaming-support
+- Removed the Led light and are now using the built in status_led method instead which saves on flash space and reduced the yaml code needed.
+- Set the Wi-Fi output_power to 9.5dB as a default which is low but should avoid any Wi-Fi setup issues due and can improve stability, reduce power use, etc. Anyone who needs it to be a higher value can simply adopt the device in ESPHome and adjust it.
+
 # 2025.12.0
 - Bump ESPHome version to 2025.11.4
 
