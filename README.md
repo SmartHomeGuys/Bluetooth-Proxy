@@ -1,6 +1,6 @@
 # Bluetooth Proxy Stick for Home Assistant
 
-## ⚠️ Note this project is a work in-progress right now, expect to be completed by end Jan 2026. 
+## ⚠️ Note this project is a work in-progress right now, expect to be completed by end Feb 2026. 
 
 <table border="0">
   <tr>
