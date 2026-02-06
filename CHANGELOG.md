@@ -1,3 +1,7 @@
+# 2026.2.0
+- Updated ESPHome version to 2026.1.3
+- Updated Device Project name
+
 # 2026.1.0
 - Updated ESPHome version to 2026.1.2 which introduced Wi-Fi roaming support.
 https://esphome.io/changelog/2026.1.0/#wifi-roaming-support
