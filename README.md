@@ -1,6 +1,4 @@
-# Bluetooth Proxy Stick for Home Assistant
-
-## ⚠️ Note this project is a work in-progress right now, expect to be completed by end Feb 2026. 
+# Bluetooth Proxy Stick for Home Assistant 
 
 <table border="0">
   <tr>
@@ -22,7 +20,7 @@ Available in three versions on our eBay site:
  - USB-A right angle pointing down
 
 <p align="center">
-  Add ebay url here<a href="    " target="_blank"><img src="images/PurchaseOnEbay-Long3.jpeg" height="90px" /></a>
+  <a href="https://www.ebay.co.uk/itm/227206771185" target="_blank"><img src="images/PurchaseOnEbay-Long3.jpeg" height="90px" /></a>
 </p>
 
 Modern homes have USB ports everywhere—on wall sockets, TVs, game consoles, routers, and extension leads. This proxy plugs straight in for a clean, cable‑free look, perfect for keeping things neat.
