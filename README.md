@@ -14,6 +14,8 @@ This compact Bluetooth (BLE) Proxy is designed for Home Assistant and plugs dire
   <img src="images/Proxy-In-Wall-Socket.jpg" height="180px" />
   <img src="images/Proxy-In-Power-Extension.jpg" height="180px" />
   <img src="images/Proxy-In-Xbox.jpg" height="180px" />
+  <img src="images/Bluetooth-Proxy-Angled-Up.jpg" height="180px" />
+  <img src="images/Bluetooth-Proxy-Angled-Down.jpg" height="180px" />
   <img src="images/HomeAssistant-Discovered-Bluetooth-Devices2.png" height="180px" />
 </p>
 
