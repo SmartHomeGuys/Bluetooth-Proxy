@@ -10,13 +10,10 @@
 This compact Bluetooth (BLE) Proxy is designed for Home Assistant and plugs directly into any USB‑A port—no cables required. It’s a simple, tidy way to extend Bluetooth coverage around your home.
 
 <p align="center">
-  <img src="images/Bluetooth-Collection.jpg" height="180px" />
+  <img src="images/All-Models.jpg" height="180px" />
   <img src="images/Bluetooth-Proxy-Angled-Up.jpg" height="180px" />
   <img src="images/Bluetooth-Proxy-Angled-Down.jpg" height="180px" />
-  <img src="images/Proxy-In-Wall-Socket.jpg" height="180px" />
-  <img src="images/Proxy-In-Power-Extension.jpg" height="180px" />
-  <img src="images/Proxy-In-Xbox.jpg" height="180px" />
-  <img src="images/HomeAssistant-Discovered-Bluetooth-Devices2.png" height="180px" />
+  <img src="images/straight-sideon3.jpg" height="180px" />
 </p>
 
 Available in three versions on our eBay site:
@@ -26,6 +23,17 @@ Available in three versions on our eBay site:
 
 <p align="center">
   <a href="https://www.ebay.co.uk/itm/227206771185" target="_blank"><img src="images/PurchaseOnEbay-Long3.jpeg" height="90px" /></a>
+</p>
+
+<p align="center">
+  <img src="images/Proxy-In-Wall-Socket.jpg" height="180px" />
+  <img src="images/Proxy-In-Power-Extension.jpg" height="180px" />
+  <img src="images/Proxy-In-Xbox.jpg" height="180px" />
+  <img src="images/straight-xbox.jpg" height="180px" /> 
+  <img src="images/straight-wallsocket2.jpg" height="180px" /> 
+  <img src="images/HomeAssistant-Discovered-Bluetooth-Devices2.png" height="180px" />
+  <img src="images/HomeAssistant-Bluetooth-Map.png" height="180px" /> 
+  <img src="images/HomeAssistant-Bluetooth-Signal-ClimateMeter.png" height="180px" />  
 </p>
 
 Modern homes have USB ports everywhere—on wall sockets, TVs, game consoles, routers, and extension leads. This proxy plugs straight in for a clean, cable‑free look, perfect for keeping things neat.
@@ -53,9 +61,25 @@ Once Bluetooth devices are added to Home Assistant, you can use them in automati
 - Built using only certified components from trusted suppliers to ensure the reliability needed for 24/7/365 operation.
 - Powered by the new ESP32-C6 chip that has 2 processors which is ideal for Bluetooth Proxies using Wi-Fi.
 - Plugs directly into a USB port, no external cable is needed.
-- Firmware of the device uses ESPHome flashed with version >=2025.11.4 (which introduced many Bluetooth improvements).
+- Firmware of the device uses ESPHome flashed with version >=2026.1.3 (which up to this version introduced many Bluetooth improvements).
 - Uses 2.4ghz Wi-Fi.
+- Power requirements: 5V 1A
 - Initial setup of the device to connect it to Wi-Fi can be done using USB or Bluetooth BLE (if your Home Assistant instance already has Bluetooth capability).
 - We have optimised the Bluetooth settings but if you want to customise it, adopt it in ESPHome and flash any changes you need to it, all the code is available free to use on our GitHub site.
 
-We designed this product to look good wherever you place it in your home, offering multiple versions so you can choose the one that fits your space best. It’s built around the modern ESP32‑C6 chip and is assembled in the UK using only certified components for reliable performance.
+### Dimensions
+- Right Angle Proxies: 5cm Length x 2.3cm Width x 1.2cm Depth (2.2cm inc USB connector)
+- Straight Proxies: 5cm Length (6.1cm inc USB connector) x 2.3cm Width x 1.2cm Depth
+
+
+### What's in the box if I bought one?
+- 1 x Bluetooth Proxy Stick
+- Getting started guide
+- All devices are assembled and tested in the UK by connecting it to our Wi-Fi and testing functionality then re-flashed prior to shipping
+
+We offer multiple versions so you can choose the one that fits your space best. It’s built around the modern ESP32‑C6 chip and is assembled in the UK using only certified components for reliable performance you need for 24/7/365 operation.
+
+<p align="center">
+  <a href="https://www.ebay.co.uk/itm/227206771185" target="_blank"><img src="images/PurchaseOnEbay-Long3.jpeg" height="90px" /></a>
+</p>
+  
