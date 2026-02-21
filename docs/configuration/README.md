@@ -8,7 +8,7 @@ Was oringinally based on this repo:
 
 
 
-We adjusted the following:
+We adjusted the esp32 section and the following:
 
 ## Scan Parameters
 Full details of all the properties that can be changed are here:
