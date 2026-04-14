@@ -22,7 +22,8 @@ Available in three versions on our eBay site:
  - USB-A right angle pointing down
 
 <p align="center">
-  <a href="https://www.ebay.co.uk/itm/227206771185" target="_blank"><img src="images/PurchaseOnEbay-Long3.jpeg" height="90px" /></a>
+  <a href="https://www.tindie.com/products/smarthomeguys/bluetooth-proxy-stick-for-home-assistant/?ref=offsite_badges&utm_source=sellers_smarthomeguys&utm_medium=badges&utm_campaign=badge_large"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" width="160" height="85"></a>
+  <a href="https://www.ebay.co.uk/itm/227206771185" target="_blank"><img src="images/PurchaseOnEbay-Long-transparent.png" height="90px" /></a>  
 </p>
 
 <p align="center">
@@ -80,6 +81,7 @@ Once Bluetooth devices are added to Home Assistant, you can use them in automati
 We offer multiple versions so you can choose the one that fits your space best. It’s built around the modern ESP32‑C6 chip and is assembled in the UK using only certified components for reliable performance you need for 24/7/365 operation.
 
 <p align="center">
-  <a href="https://www.ebay.co.uk/itm/227206771185" target="_blank"><img src="images/PurchaseOnEbay-Long3.jpeg" height="90px" /></a>
+  <a href="https://www.tindie.com/products/smarthomeguys/bluetooth-proxy-stick-for-home-assistant/?ref=offsite_badges&utm_source=sellers_smarthomeguys&utm_medium=badges&utm_campaign=badge_large"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" width="160" height="85"></a>
+  <a href="https://www.ebay.co.uk/itm/227206771185" target="_blank"><img src="images/PurchaseOnEbay-Long-transparent.png" height="90px" /></a>
 </p>
   
