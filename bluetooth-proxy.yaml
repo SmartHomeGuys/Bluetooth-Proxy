@@ -39,7 +39,6 @@ http_request:
   verify_ssl: false
 
 wifi:
-  # Dont add wifi details, just Enable fallback hotspot (captive portal to allow wifi setup for users)
   power_save_mode: NONE
   output_power: 9.5dB
   
