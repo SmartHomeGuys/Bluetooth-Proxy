@@ -15,7 +15,7 @@ You will now be asked to choose an Area in HomeAssistant for the device.
 ![](images/Device-Discovered-Add-To-Homeassistant-Area.png)
 
 
-Click 'Finish' and a "DeskUp Pro Controller" device will now appear under the ESPHome Integration.
+Click 'Finish' and a "Bluetooth Proxy" device will now appear under the ESPHome Integration.
 
 ![](images/Device-Added-To-ESPHome-Integration.png)
 
