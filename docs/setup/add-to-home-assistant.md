@@ -27,6 +27,6 @@ The device will also be shown as an adapter under settings -> Bluetooth -> Adapt
 
 And you can see what other Bluetooth devices it has found nearby by viewing settings -> Bluetooth -> Advertisements
 
-
+![](images/Bluetooth-Proxy-Shown-in-HomeAssistant-Bluetooth-Screen.jpg)
 
 You can now optionally 'Adopt' the device in ESP Home by [following this guide](adopting-in-home-assistant.md).
