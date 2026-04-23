@@ -19,4 +19,14 @@ Click 'Finish' and a "Bluetooth Proxy" device will now appear under the ESPHome 
 
 ![](images/Device-Added-To-ESPHome-Integration.png)
 
+The device will also appear in the Bluetooth Integration goto Settings -> Devices -> Bluetooth
+
+![](images/Bluetooth-Proxy-Shown-in-HomeAssistant.jpg)
+
+The device will also be shown as an adapter under settings -> Bluetooth -> Adapters
+
+And you can see what other Bluetooth devices it has found nearby by viewing settings -> Bluetooth -> Advertisements
+
+
+
 You can now optionally 'Adopt' the device in ESP Home by [following this guide](adopting-in-home-assistant.md).
