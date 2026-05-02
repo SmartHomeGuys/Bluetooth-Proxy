@@ -10,7 +10,7 @@
 This compact Bluetooth (BLE) Proxy is designed for Home Assistant and plugs directly into any USB‑A port—no cables required. It’s a simple, tidy way to extend Bluetooth coverage around your home.
 
 <p align="center">
-  <img src="images/All-Models.jpg" height="180px" />
+  <img src="images/All-Models-with-esphome.jpg" height="180px" />
   <img src="images/Bluetooth-Proxy-Angled-Up.jpg" height="180px" />
   <img src="images/Bluetooth-Proxy-Angled-Down.jpg" height="180px" />
   <img src="images/straight-sideon3.jpg" height="180px" />
