@@ -1,5 +1,5 @@
 # Setup your Bluetooth Proxy
-When you first power on the device it's Led will be solid Red, this just means it is not connected to your Wi-Fi, once it is the Led will be off.
+When you first power on the device it's Led will be solid Yellow this just means it is not connected to your Wi-Fi, once it is the Led will be off.
 
 ## Step 1: Connect to Wi-Fi
 To do this choose from one of these options:
