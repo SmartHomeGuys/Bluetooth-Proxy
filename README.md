@@ -25,7 +25,7 @@ Available in three versions on our eBay site:
  - USB-A right angle pointing down
 
 <p align="center">
-  <a href="https://smarthomeguys.uk/products/bluetooth-proxy-stick-for-home-assistant" target="_blank"><img src="images/SmartHomeGuys-BuyNowButton.png" height="180px" />  
+  <a href="https://smarthomeguys.uk/products/bluetooth-proxy-stick-for-home-assistant" target="_blank"><img src="images/SmartHomeGuys-BuyNowButton-Transparent3.png" height="180px" /></a>
 </p>
 
 <p align="center">
@@ -83,6 +83,6 @@ Once Bluetooth devices are added to Home Assistant, you can use them in automati
 We offer multiple versions so you can choose the one that fits your space best. It’s built around the modern ESP32‑C6 chip and is assembled in the UK using only certified components for reliable performance you need for 24/7/365 operation.
 
 <p align="center">
-  <a href="https://smarthomeguys.uk/products/bluetooth-proxy-stick-for-home-assistant" target="_blank"><img src="images/SmartHomeGuys-BuyNowButton.png" height="180px" />
+  <a href="https://smarthomeguys.uk/products/bluetooth-proxy-stick-for-home-assistant" target="_blank"><img src="images/SmartHomeGuys-BuyNowButton-Transparent3.png" height="180px" /></a>
 </p>
   
