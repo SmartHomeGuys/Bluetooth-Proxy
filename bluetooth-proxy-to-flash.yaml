@@ -1,0 +1,100 @@
+substitutions:
+  name: "bluetooth-proxy"
+  friendly_name: "Bluetooth Proxy"
+
+esphome:
+  name: ${name}
+  friendly_name: ${friendly_name}
+  project:
+    name: SmartHomeGuys.Bluetooth Proxy Stick
+    version: "2026.2.0"
+  name_add_mac_suffix: true
+  on_boot:
+    priority: 800
+    then:
+      - output.turn_off: GPIO03   # enable setting the antenna to internal or external. This activates the RF switch control
+
+
+esp32:
+  board: seeed_xiao_esp32c6
+  variant: esp32c6
+  framework:
+    type: esp-idf
+    advanced:                       # Add OTA Encryption so firmware files are signed by us
+      signed_ota_verification:
+        signing_key: ota_signing_key.pem
+        signing_scheme: rsa3072
+
+# Enable logging
+logger: 
+  level: NONE
+
+# Enable Home Assistant API
+api:
+  # No encryption key should be added when flashed for distribution
+
+ota:
+  - platform: esphome
+    id: ota_esphome
+  - platform: http_request
+    id: ota_http_request
+
+http_request:
+  verify_ssl: false
+
+wifi:
+  power_save_mode: NONE
+  output_power: 9.5dB
+  
+# For configuring Wi-Fi on an ESPHome device by using a serial connection to the device, eg. USB.
+improv_serial:
+
+# For configuring Wi-Fi on an ESP32 device by using Bluetooth Low Energy (BLE) to receive the credentials.
+esp32_improv:
+  authorizer: none
+
+update:
+  - platform: http_request
+    id: update_http_request
+    name: BLE Proxy Firmware
+    source: https://smarthomeguys.github.io/Bluetooth-Proxy/manifest-with-encryption.json
+    disabled_by_default: false
+    update_interval: 6h
+
+dashboard_import:
+  package_import_url: github://SmartHomeGuys/Bluetooth-Proxy/bluetooth-proxy.yaml@main
+  import_full_config: false
+  
+
+# Bluebooth code starts here
+# It was based on this repo: https://github.com/esphome/bluetooth-proxies/blob/main/esp32-generic/esp32-generic-c3.yaml
+# Default values were used below, copied from the links provided below in case anyone wants to override them
+
+# https://esphome.io/components/esp32_ble_tracker
+esp32_ble_tracker:
+  scan_parameters:
+    active: true      # Using false prevented the Battery Level being read on a Switchbot Outdoor Climate Meter
+    continuous: true
+
+    # Had alot of drop offs when using defaults (interval 320ms, window 30ms) and Bermuda integration, these are stable
+    interval: 600ms
+    window: 600ms
+
+# https://esphome.io/components/bluetooth_proxy.html
+bluetooth_proxy:
+  active: true
+  cache_services: true
+  connection_slots: 3
+
+# Bluebooth code ends here
+
+status_led:
+  pin:
+    number: GPIO15
+    inverted: true
+
+output:
+  # enables setting the antenna to external or internal. This activates the RF switch control.
+  - platform: gpio
+    id: "GPIO03"
+    pin: GPIO03
