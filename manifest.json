@@ -1,24 +1,23 @@
 {
-  "name": "Bluetooth Proxy Stick",
-  "version": "2026.2.0",
-  "home_assistant_domain": "esphome",
-  "new_install_skip_erase": false,
-  "builds": [
-    {
-      "chipFamily": "ESP32-C6",
-      "parts": [
-        { 
-          "path": "firmware/bluetooth-proxy.factory.bin", 
-          "offset": 0 
-        }
-      ],
-      "ota": 
-        {
-          "md5": "9c5e2c94a51d5091ef8e4497cf0703d8",
-          "path": "firmware/bluetooth-proxy.ota.bin",
-          "release_url": "https://github.com/SmartHomeGuys/Bluetooth-Proxy/blob/main/CHANGELOG.md",
-          "summary": ""
-        }
-    }
-  ]
+    "name":  "Bluetooth Proxy Stick",
+    "version":  "2026.9.0",
+    "home_assistant_domain":  "esphome",
+    "new_install_skip_erase":  false,
+    "builds":  [
+                   {
+                       "chipFamily":  "ESP32-C6",
+                       "parts":  [
+                                     {
+                                         "path":  "firmware/bluetooth-proxy.factory.bin",
+                                         "offset":  0
+                                     }
+                                 ],
+                       "ota":  {
+                                   "md5":  "275d97892f70ea6faa874773094b0e4a",
+                                   "path":  "firmware/bluetooth-proxy.ota.bin",
+                                   "release_url":  "https://github.com/SmartHomeGuys/Bluetooth-Proxy/blob/main/CHANGELOG.md",
+                                   "summary":  ""
+                               }
+                   }
+               ]
 }
