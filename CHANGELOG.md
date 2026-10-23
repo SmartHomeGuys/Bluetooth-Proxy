@@ -1,3 +1,9 @@
+# 2026.10.0
+- Updated ESPHome version to 2026.9.1
+- Changed interval & window to 600 from 800 to fix a build warning in the newer ESPHome version
+- New devices now have a 10 minute window for setup to connect a powered device to wi-fi via BLE after which Wifi & BLE Improv are shutdown on the device. You then need to power cycle the device to get another 10 minute window. Added for RED EN 18031-1 compliance
+- This also sets the Api.Encryption.Key when the device first connects to Home Assistant see https://esphome.io/components/provisioning/. Added for RED EN 18031-1 compliance
+
 # 2026.2.0
 - Updated ESPHome version to 2026.1.3
 - Updated Device Project name

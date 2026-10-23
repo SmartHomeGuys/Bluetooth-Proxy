@@ -3,11 +3,12 @@ substitutions:
   friendly_name: "Bluetooth Proxy"
 
 esphome:
+  min_version: 2026.7.0
   name: ${name}
   friendly_name: ${friendly_name}
   project:
     name: SmartHomeGuys.Bluetooth Proxy Stick
-    version: "2026.2.0"
+    version: "2026.10.0"
   name_add_mac_suffix: true
   on_boot:
     priority: 800
@@ -20,10 +21,24 @@ esp32:
   variant: esp32c6
   framework:
     type: esp-idf
-    advanced:                       # Add OTA Encryption so firmware files are signed by us
+    advanced:
+      # Add OTA Encryption so firmware files are signed by us (RED EN 18031-1 requirement)
+      # signed_ota_verification was added in ESPHome 2026.4.0
       signed_ota_verification:
         signing_key: ota_signing_key.pem
         signing_scheme: rsa3072
+
+# 10 minutes to connect a powered device to wi-fi via BLE after which Wifi & BLE Improv are shutdown on the device.
+# You then need to power cycle the device to get another 10 minute window
+# This also sets the Api.Encryption.Key when the device first connects to Home Assistant see https://esphome.io/components/provisioning/
+# Added for RED EN 18031-1 compliance
+# The provisioning section was added in ESPHome 2026.7.0
+provisioning:
+  timeout: 10min
+  on_timeout:
+    then:
+      - logger.log: "Provisioning window closed. Power-cycle the device to reopen it."
+
 
 # Enable logging
 logger: 
@@ -31,7 +46,10 @@ logger:
 
 # Enable Home Assistant API
 api:
-  # No encryption key should be added when flashed for distribution
+  encryption:
+    # No key is set here, instead it is set during provisioning (by the provisioning section)
+    # If a device is later adopted in ESPHome it will then be given a new key.
+    # This was hardened in ESPHome 2026.7.0 so during initial device provisioning that connection is encrypted.
 
 ota:
   - platform: esphome

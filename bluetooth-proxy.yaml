@@ -3,11 +3,12 @@ substitutions:
   friendly_name: "Bluetooth Proxy"
 
 esphome:
+  min_version: 2026.7.0
   name: ${name}
   friendly_name: ${friendly_name}
   project:
     name: SmartHomeGuys.Bluetooth Proxy Stick
-    version: "2026.2.0"
+    version: "2026.10.0"
   name_add_mac_suffix: true
   on_boot:
     priority: 800
@@ -27,7 +28,10 @@ logger:
 
 # Enable Home Assistant API
 api:
-  # No encryption key should be added when flashed for distribution
+  encryption:
+    # No key is set here, instead it is set during provisioning (by the provisioning section)
+    # If a device is later adopted in ESPHome it will then be given a new key.
+    # This was hardened in ESPHome 2026.7.0 so during initial device provisioning that connection is encrypted.
 
 ota:
   - platform: esphome
@@ -73,8 +77,8 @@ esp32_ble_tracker:
     continuous: true
 
     # Had alot of drop offs when using defaults (interval 320ms, window 30ms) and Bermuda integration, these are stable
-    interval: 800ms
-    window: 800ms
+    interval: 600ms
+    window: 600ms
 
 # https://esphome.io/components/bluetooth_proxy.html
 bluetooth_proxy:
