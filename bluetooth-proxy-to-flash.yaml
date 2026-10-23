@@ -75,7 +75,7 @@ update:
   - platform: http_request
     id: update_http_request
     name: BLE Proxy Firmware
-    source: https://smarthomeguys.github.io/Bluetooth-Proxy/manifest-with-encryption.json
+    source: https://smarthomeguys.github.io/Bluetooth-Proxy/manifest.json
     disabled_by_default: false
     update_interval: 6h
 
