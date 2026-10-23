@@ -1,6 +1,6 @@
 {
     "name":  "Bluetooth Proxy Stick",
-    "version":  "2026.10.0",
+    "version":  "2026.2.0",
     "home_assistant_domain":  "esphome",
     "new_install_skip_erase":  false,
     "builds":  [
@@ -13,7 +13,7 @@
                                      }
                                  ],
                        "ota":  {
-                                   "md5":  "275d97892f70ea6faa874773094b0e4a",
+                                   "md5":  "9c5e2c94a51d5091ef8e4497cf0703d8",
                                    "path":  "firmware/bluetooth-proxy.ota.bin",
                                    "release_url":  "https://github.com/SmartHomeGuys/Bluetooth-Proxy/blob/main/CHANGELOG.md",
                                    "summary":  ""
