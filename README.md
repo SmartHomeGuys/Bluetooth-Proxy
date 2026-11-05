@@ -20,7 +20,7 @@ This compact Bluetooth (BLE) Proxy is designed for Home Assistant and plugs dire
   <img src="images/USB-C Side New.jpg" height="180px" />
 </p>
 
-Available in four versions on our eBay site:
+Available in four versions on our store:
  - USB-A straight
  - USB-C straight
  - USB-A right angle pointing up
