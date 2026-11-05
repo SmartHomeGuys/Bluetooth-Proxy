@@ -7,20 +7,22 @@
   </tr>
 </table>
 
-This compact Bluetooth (BLE) Proxy is designed for Home Assistant and plugs directly into any USB‑A port—no cables required. It’s a simple, tidy way to extend Bluetooth coverage around your home.
+This compact Bluetooth (BLE) Proxy is designed for Home Assistant and plugs directly into any USB port—no cables required. It’s a simple, tidy way to extend Bluetooth coverage around your home.
 
 <p align="center">
-  <img src="images/Bluetooth-All-Madefor-esphome.png" height="500px" />
+  <img src="images/Bluetooth Proxy - All Devices with ESPHome.png" height="500px" />
 </p>
 
 <p align="center">
   <img src="images/Bluetooth-up-front.jpg" height="180px" />
   <img src="images/Bluetooth-down-front.jpg" height="180px" />
   <img src="images/straight-sideon3.jpg" height="180px" />
+  <img src="images/USB-C Side New.jpg" height="180px" />
 </p>
 
-Available in three versions on our eBay site:
+Available in four versions on our eBay site:
  - USB-A straight
+ - USB-C straight
  - USB-A right angle pointing up
  - USB-A right angle pointing down
 
@@ -64,7 +66,7 @@ Once Bluetooth devices are added to Home Assistant, you can use them in automati
 - Built using only certified components from trusted suppliers to ensure the reliability needed for 24/7/365 operation.
 - Powered by the new ESP32-C6 chip that has 2 processors which is ideal for Bluetooth Proxies using Wi-Fi.
 - Plugs directly into a USB port, no external cable is needed.
-- Firmware of the device uses ESPHome flashed with version >=2026.1.3 (which up to this version introduced many Bluetooth improvements).
+- Firmware of the device uses ESPHome flashed with version >=2026.9.1
 - Uses 2.4ghz Wi-Fi.
 - Power requirements: 5V 1A
 - Initial setup of the device to connect it to Wi-Fi can be done using USB or Bluetooth BLE (if your Home Assistant instance already has Bluetooth capability).
@@ -72,7 +74,8 @@ Once Bluetooth devices are added to Home Assistant, you can use them in automati
 
 ### Dimensions
 - Right Angle Proxies: 5cm Length x 2.3cm Width x 1.2cm Depth (2.2cm inc USB connector)
-- Straight Proxies: 5cm Length (6.1cm inc USB connector) x 2.3cm Width x 1.2cm Depth
+- Straight USB Proxies: 5cm Length (6.1cm inc USB connector) x 2.3cm Width x 1.2cm Depth
+- Straight USB-C Proxies: 5cm Length (5.7cm inc USB connector) x 2.3cm Width x 1.2cm Depth
 
 
 ### What's in the box if I bought one?

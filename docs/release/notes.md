@@ -7,45 +7,23 @@
 - Remove the 'Bluetooth Proxy' device from Home Assistant so it does not exist as a device under integrations or under ESPHome Builder or Unify.
 
 ### Notes on how to release a new version
-- Make code changes locally (avoiding using Git) on a development version of a Bluetooth Proxy device.
-
+- Make code changes locally (avoiding using Git) on a development version of a device.
 - No need to worry about version numbers at this point.
 
-- Once development is complete update the bluetooth-proxy.yaml with a new version number.
-
-- Copy the changed changes from Home Assistant into the yaml file in the Git folder (locally on a laptop).
+- Once development is complete update the local Git repo's bluetooth-proxy.yaml & bluetooth=proxy-to-flash.yaml with the code chnages and a new version number.
 
 - Update CHANGELOG.md
-
 - Commit and push to GitHub.
+- Wait 1 minute for any local GitHub cached files to expire from cache.
 
-- Copy / Paste the contents of the 'bluetooth-proxy.yaml' over the top of the development Bluetooth Proxy device in ESPHome. Keep a copy though as you need to put this back later.
 
-- Run valiate on the development Bluetooth Proxy device in ESPHome, it should show the new version number.
+- Run powershell command BuildBluetoothProxyRelease.ps1 found in c:\[userfolder]\esphome
+- This will build a firmware version.
 
-- Click 'Install' (DO NOT Install onto the device over Wi-Fi) we just need to download the bin files:
-
-  - Install -> Choose manual download (download both options when prompted, Factory Format and OTA Format). You need to click the 'download' button for the 2nd file.
-
-  - Copy both files from 'downloads' into C:\GitHub\Bluetooth-Proxy\firmware
-
-  - Open Powershell and go to that fireware folder.
-
-  - We need to create an MD5 Hash for the ota file, run this in Powershell:
-
-    (Get-FileHash -Path bluetooth-proxy.ota.bin -Algorithm md5).Hash.ToLower() | Out-File -FilePath firmware.md5 -Encoding ASCII
-
-  - Open VS Code for the Git repo: Bluetooth-Proxy
-
-  - The 2 bin files and a firmware.md5 file should already be listed under commits.
-
-  - Update version number and the md5 hash (found in firmware.md5 file) in the manifest.json file
-
-  - Wait until the the code changes are committed to Git for 24 hours due to caching in user's Home Assistant's of files downloaded from Git.
-
+  - In VSCode the 2 bin files and a firmware.md5 file should already be listed under commits. 
+  - Update the version number in the manifest.json file
   - Now check these 4 updated files into Git
 
-- Copy the ESPHome contents of the development Bluetooth Proxy device you saved (somewhere safe) back into ESPHome and save it.
 
 - In the GitHub repo add a version.
 
