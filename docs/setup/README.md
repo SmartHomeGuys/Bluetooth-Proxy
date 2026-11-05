@@ -20,7 +20,7 @@ wifi:
   power_save_mode: NONE
   output_power: 9.5dB
 ```
-Documentation for the above is here: https://esphome.io/components/wifi
+Documentation for the above is here: <a href="https://esphome.io/components/wifi">https://esphome.io/components/wifi</a>
 
 ## Step 2: Add to Home Assistant (optional)
 If you missed it in the previous guides, you can add the device so it appears in Home Assistant by following [this guide](add-to-home-assistant.md).  
