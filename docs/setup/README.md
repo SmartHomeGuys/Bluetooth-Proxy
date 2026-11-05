@@ -12,6 +12,8 @@ To do this choose from one of these options:
 Usually there are no issues with Wi-Fi when using our default firmware but if you do experience any issues with the Wi-Fi connection dropping then below are a few things to try:
 
 - Try relocating the device if its near other sources that can cause Wi-Fi interference on the 2.4GHz band such as a microwave for example.
+  
+- If your using a usb extension maybe this is not providing a constant power supply resulting in the proxy restarting. Try ruling this out by using a usb adapter instead (like you would use to charge a phone).
 
 - Adjust the output power of the device by adopting the device in esphome in home assistant.
   Then gradually increase the Wi-Fi output_power from its default, but dont just put it straight to the maximum as that could potentially cause connection issues too. In the yaml you will find this block:
