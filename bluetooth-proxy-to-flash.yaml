@@ -42,7 +42,7 @@ provisioning:
 
 # Enable logging
 logger: 
-  level: NONE
+  level: WARN
 
 # Enable Home Assistant API
 api:
@@ -68,7 +68,7 @@ wifi:
 improv_serial:
 
 # For configuring Wi-Fi on an ESP32 device by using Bluetooth Low Energy (BLE) to receive the credentials.
-esp32_improv:
+improv_ble:
   authorizer: none
 
 update:
